@@ -12,19 +12,19 @@ import { ChannelsComponent } from './components/channels/channels.component';
 import { TimesComponent } from './components/times/times.component';
 import { PromotionsComponent } from './components/promotions/promotions.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    CustomersComponent,
     ProductsComponent,
     CountriesComponent,
     SalesComponent,
     CostsComponent,
-    ProductsComponent,
     CustomersComponent,
     ChannelsComponent,
     TimesComponent,
-    PromotionsComponent
+    PromotionsComponent,
+  
   ],
   imports: [
     BrowserModule,
