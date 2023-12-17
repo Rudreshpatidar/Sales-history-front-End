@@ -1,0 +1,35 @@
+
+<h2>ALL SALES</h2>
+
+ <div class="container">
+</div>
+    <div>
+    <table class="table table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th>ID</th>
+            <th>PRODUCT ID</th>
+            <th>CHANNEL ID</th>
+            <th>CUSTOMER ID</th>
+            <th>PROMOTION ID</th>
+            <th>TIMES ID</th>
+            <th>QUANTITY</th>
+            <th>AMOUNT</th>
+          </tr>
+
+        </thead>
+        <tbody>
+            <tr *ngFor="let sale of sales">
+            <td>{{sale.id}}</td>
+            <td>{{sale.productPojo.prodId}}</td>
+            <td>{{sale.channelPojo.channelId}}</td>
+            <td>{{sale.customerPojo.customerId}}</td>
+            <td>{{sale.promotionPojo.promoId}}</td>
+            <td>{{sale.timesPojo.timeId}}</td>
+            <td>{{sale.quantitySold}}</td>
+            <td>{{sale.amountSold}}</td>
+          </tr>
+        </tbody>
+      </table>
+  
+</div> 
