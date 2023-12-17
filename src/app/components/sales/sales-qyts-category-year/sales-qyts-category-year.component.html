@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="mb-3">
+      <h2> <label for="searchYear" class="form-label">Search Total  Quantity Categorywise by Year:</label></h2> 
+        <input type="number" (change)="clearSalesData()" class="form-control" id="searchYear" name="searchYear" [(ngModel)]="searchedYear">
+        <button class="btn btn-primary mt-2" (click)="searchByYear()">Search</button>
+    </div>
+</div>
+
+<div *ngIf="salesData.length > 0" class="container">
+    <h2>All Sales</h2>
+    <table class="table table-striped table-bordered">
+        <!-- Table headers -->
+        <thead class="thead-dark">
+            <tr>
+                <th>CATEGORY</th>
+                <th>Total Qyts-Category in the Given Year</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let sale of salesData">
+                <!-- Table cells -->
+                <td>{{ sale[0] }}</td>
+                <td>{{ sale[1] }}</td>
+                <td>{{ sale[2] }}</td>
+              
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div *ngIf="salesData.length === 0 && searchedYear !== null" class="container" >
+    <h1>No data found for the year {{ searchedYear }}</h1>
+</div>

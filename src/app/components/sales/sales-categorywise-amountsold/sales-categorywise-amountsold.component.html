@@ -1,0 +1,22 @@
+<div class="container">
+    <h2>TOTAL AMOUNT SOLD BY CATEGORY WISE</h2>
+ </div>
+     <div>
+     <table class="table table-striped table-bordered">
+         <thead  class="thead-dark">
+           <tr>
+             <th>Category</th>
+             <th>Total AMOUNT SOLD</th>
+           </tr>
+         </thead>
+         <tbody>
+             <tr *ngFor="let salesInfo of sales">
+             
+             <td>{{salesInfo[0]}}</td>
+             <td>{{salesInfo[1]}}</td>
+             
+           </tr>
+         </tbody>
+       </table>
+   
+ </div>

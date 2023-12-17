@@ -1,0 +1,45 @@
+<div class="container">
+    <form>
+     <div class="mb-3">
+       <label for="sDate" class="form-label">Search by Date:</label>
+       <input type="text" (change)="clearSalesData()" class="form-control" id="sDate" name="searchDate" [(ngModel)]="searchedDate">
+       <button class="btn btn-primary mt-2" (click)="searchByDate()">Search</button>
+     </div>
+   </form>
+   </div>
+   
+   <div *ngIf="sales.length > 0" class="container">
+     <h2>Sales By Date</h2>
+     <table class="table table-striped table-bordered">
+       <!-- Table headers -->
+       <thead class="thead-dark">
+         <tr>
+            <th>ID</th>
+            <th>PRODUCT ID</th>
+            <th>CHANNEL ID</th>
+            <th>CUSTOMER ID</th>
+            <th>PROMOTION ID</th>
+            <th>TIMES ID</th>
+            <th>QUANTITY</th>
+            <th>AMOUNT</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr *ngFor="let sale of sales">
+                <td>{{sale.id}}</td>
+                <td>{{sale.product.prodId}}</td>
+                <td>{{sale.channel.channelId}}</td>
+                <td>{{sale.customer.customerId}}</td>
+                <td>{{sale.promotion.promoId}}</td>
+                <td>{{sale.times.timeId}}</td>
+                <td>{{sale.quantitySold}}</td>
+                <td>{{sale.amountSold}}</td>
+         </tr>
+       </tbody>
+     </table>
+   </div>
+   
+   <div *ngIf="sales.length === 0 && searchedDate !== null" class="container">
+     <p>No sales data found for the selected date : {{searchedDate}}</p>
+   </div>
+   

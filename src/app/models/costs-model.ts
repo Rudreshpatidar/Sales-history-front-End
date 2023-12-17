@@ -5,12 +5,12 @@ import { TimesModel } from "./times-model";
 
 export class CostsModel {
 constructor(
-    private id:number,
-    private product:ProductsModel,
-    private time:TimesModel,
-    private promotion:PromotionsModel,
-    private channel:ChannelsModel,
-    private unitCost:number,
-    private unitPrice:number,
+    public id:number,
+    public product:ProductsModel,
+    public time:TimesModel,
+    public promotion:PromotionsModel,
+    public channel:ChannelsModel,
+    public unitCost:number,
+    public unitPrice:number,
 ){}
 }

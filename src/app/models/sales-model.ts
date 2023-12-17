@@ -6,13 +6,17 @@ import { TimesModel } from "./times-model";
 
 export class SalesModel {
     constructor(
-        private id:number,
-        private product:ProductsModel,
-        private channel:ChannelsModel,
-        private customer:CustomersModel,
-        private promotions:PromotionsModel,
-        private times:TimesModel,
-        private quantitySold:number,
-        private amountSold:number,
+        public id:number,
+        public productPojo:ProductsModel,
+        public channelPojo:ChannelsModel,
+        public customerPojo:CustomersModel,
+        public promotionPojo:PromotionsModel,
+        public timesPojo:TimesModel,
+        public quantitySold:number,
+        public amountSold:number,
     ){}
 }
+
+
+
+

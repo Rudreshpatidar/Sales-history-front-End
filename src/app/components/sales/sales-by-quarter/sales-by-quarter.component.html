@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="mb-3">
+      <label for="searchQuarter" class="form-label">Search by Quarter:</label>
+      <input type="number" (change)="clearSalesData()" class="form-control" id="searchQuarter" placeholder="enter quarter month : ex:jan-1, feb - 2....12" name="searchQuarter" [(ngModel)]="searchedQuarter">
+      <button class="btn btn-primary mt-2" (click)="searchByQuarter()" aria-placeholder="enter quarter month">Search</button>
+    </div>
+</div>
+
+<div *ngIf="sales.length > 0 " class="container">
+    <h2>Sales By Category</h2>
+    <table class="table table-striped table-bordered">
+        <!-- Table headers -->
+        <thead class="thead-dark">
+            <tr>
+                <th>CATEGORY</th>
+                <th>id</th>
+                <th>ProdId</th>
+                <th>channelId</th>
+                <th>promoId</th>
+                <th>customerId</th>
+                <th>timesId</th>
+                <th>quantitySold</th>
+                <th>amountSold</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let sale of sales">
+                <!-- Table cells -->
+                <td>{{ sale[0] }}</td>
+                <td>{{sale[1].id}}</td>
+                <td>{{ sale[1].product.prodId }}</td>
+                <td>{{ sale[1].channel.channelId }}</td>
+                <td>{{ sale[1].promotion.promoId }}</td>
+                <td>{{ sale[1].customer.customerId }}</td>
+                <td>{{ sale[1].times.timeId }}</td>
+                <td>{{ sale[1].quantitySold }}</td>
+                <td>{{ sale[1].amountSold }}</td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
+   
+  
+  <div *ngIf="sales.length === 0 && searchedQuarter !== null" class="container">
+    <p>No data found for the month {{ searchedQuarter }}</p>
+  </div>
+  
