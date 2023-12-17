@@ -21,6 +21,7 @@ import { SalesByQuarterComponent } from './components/sales/sales-by-quarter/sal
 import { FormsModule } from '@angular/forms';
 import { SalesOnDatebasedComponent } from './components/sales/sales-on-datebased/sales-on-datebased.component';
 import { HeaderComponent } from './header/header.component';
+import { AddProductComponent } from './components/products/add-product/add-product.component';
 
 
 
@@ -43,6 +44,7 @@ import { HeaderComponent } from './header/header.component';
     SalesByQuarterComponent,
     SalesOnDatebasedComponent,
     HeaderComponent,
+    AddProductComponent,
     
     
 
