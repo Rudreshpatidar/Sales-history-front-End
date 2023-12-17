@@ -14,8 +14,6 @@ import { PromotionsComponent } from './components/promotions/promotions.componen
 import { SalesByCategorywiseComponent } from './components/sales/sales-by-categorywise/sales-by-categorywise.component';
 import { SalesCategorywiseAmountsoldComponent } from './components/sales/sales-categorywise-amountsold/sales-categorywise-amountsold.component';
 import { AllSalesComponent } from './components/sales/all-sales/all-sales.component';
-import { SalesByDateComponent } from './componenets/sales/sales-by-date/sales-by-date.component';
-import { SalesByQuarterMonthComponent } from './componenets/sales/sales-by-quarter-month/sales-by-quarter-month.component';
 import { SalesQytsCategoryYearComponent } from './components/sales/sales-qyts-category-year/sales-qyts-category-year.component';
 import { SalesSoldCategoryYearComponent } from './components/sales/sales-sold-category-year/sales-sold-category-year.component';
 import { CommonModule } from '@angular/common';
@@ -40,13 +38,12 @@ import { HeaderComponent } from './header/header.component';
     SalesByCategorywiseComponent,
     SalesCategorywiseAmountsoldComponent,
     AllSalesComponent,
-    SalesByDateComponent,
-    SalesByQuarterMonthComponent,
     SalesQytsCategoryYearComponent,
     SalesSoldCategoryYearComponent,
     SalesByQuarterComponent,
     SalesOnDatebasedComponent,
     HeaderComponent,
+    
     
 
   

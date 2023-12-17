@@ -7,8 +7,19 @@ import { SalesByCategorywiseComponent } from './components/sales/sales-by-catego
 import { SalesCategorywiseAmountsoldComponent } from './components/sales/sales-categorywise-amountsold/sales-categorywise-amountsold.component';
 import { SalesQytsCategoryYearComponent } from './components/sales/sales-qyts-category-year/sales-qyts-category-year.component';
 import { SalesSoldCategoryYearComponent } from './components/sales/sales-sold-category-year/sales-sold-category-year.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { HeaderComponent } from './header/header.component';
+import { CustomersComponent } from './components/customers/customers.component';
+import { CountriesComponent } from './components/countries/countries.component';
+import { ProductsComponent } from './components/products/products.component';
 
 const routes: Routes = [
+
+  { path: '', component: LandingPageComponent }, // Default route to your landing page
+  { path: 'button1', component: ProductsComponent }, // Replace 'Button1Component' with your component
+  { path: 'button2', component: CustomersComponent }, // Replace 'Button2Component' with your component
+  { path: 'button3', component: CountriesComponent }, // Replace 'Button3Component' with your component
+  { path: 'button4', component: HeaderComponent } ,// Replace 'Button4Component' with your component
 
   { path: 'all-sales', component:AllSalesComponent  },
   { path: 'sales-based-on-date', component: SalesOnDatebasedComponent },
