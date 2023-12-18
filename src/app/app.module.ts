@@ -41,7 +41,7 @@ import { SalesOnDatebasedComponent } from './components/sales/sales-on-datebased
     SalesSoldCategoryYearComponent,
     SalesByQuarterComponent,
     SalesOnDatebasedComponent,
-    
+
   ],
   imports: [
 
