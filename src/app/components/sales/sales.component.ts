@@ -8,5 +8,7 @@ import { SalesModel } from '../../models/sales-model';
   styleUrl: './sales.component.css'
 })
 export class SalesComponent{
+
+  
   
 }

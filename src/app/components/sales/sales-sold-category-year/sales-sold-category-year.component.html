@@ -1,8 +1,9 @@
+
 <div class="container">
     <div class="mb-3">
     <h2><label for="searchYear" class="form-label">Search Total Amount Sold Categorywise by Year:</label></h2> 
-      <input type="number" (change)="clearSalesData()" class="form-control" id="searchYear" name="searchYear" [(ngModel)]="searchedYear"> 
-      <button class="btn btn-primary mt-2" (click)="searchByYear()">Search</button>
+      <input type="number" placeholder="Enter Year in this format : YYYY  , example :2020 or 2000" (change)="clearSalesData()" class="form-control" id="searchYear" name="searchYear" [(ngModel)]="searchedYear"> 
+      <button class="btn btn-primary mt-3" (click)="searchByYear()">Search</button>
     </div>
   </div>
  
@@ -21,7 +22,6 @@
                 <!-- Table cells -->
                 <td>{{ sale[0] }}</td>
                 <td>{{ sale[1] }}</td>
-                <td>{{ sale[2] }}</td>
               
             </tr>
         </tbody>

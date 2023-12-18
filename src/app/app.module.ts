@@ -20,7 +20,6 @@ import { CommonModule } from '@angular/common';
 import { SalesByQuarterComponent } from './components/sales/sales-by-quarter/sales-by-quarter.component';
 import { FormsModule } from '@angular/forms';
 import { SalesOnDatebasedComponent } from './components/sales/sales-on-datebased/sales-on-datebased.component';
-import { HeaderComponent } from './header/header.component';
 
 
 
@@ -42,11 +41,7 @@ import { HeaderComponent } from './header/header.component';
     SalesSoldCategoryYearComponent,
     SalesByQuarterComponent,
     SalesOnDatebasedComponent,
-    HeaderComponent,
     
-    
-
-  
   ],
   imports: [
 
