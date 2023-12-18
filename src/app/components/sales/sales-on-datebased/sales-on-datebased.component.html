@@ -2,7 +2,7 @@
     <form>
      <div class="mb-3">
        <label for="sDate" class="form-label">Search by Date:</label>
-       <input type="text" (change)="clearSalesData()" class="form-control" id="sDate" name="searchDate" [(ngModel)]="searchedDate">
+       <input type="text" placeholder="Enter date in this format : YYYY-MM-DD" (change)="clearSalesData()" class="form-control" id="sDate" name="searchDate" [(ngModel)]="searchedDate">
        <button class="btn btn-primary mt-2" (click)="searchByDate()">Search</button>
      </div>
    </form>
