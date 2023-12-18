@@ -16,7 +16,7 @@ this.authService.removeUser();
 // set isLoggedIn to false in authService
 this.authService.isLoggedIn = false;
 // navigate to login
-this.router.navigate(['login']);
+this.router.navigate(['/login']);
  
 }
 }

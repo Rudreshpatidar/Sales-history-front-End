@@ -23,8 +23,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddProductComponent } from './components/products/add-product/add-product.component';
 
 
-import { FormsModule } from '@angular/forms';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { LogoutComponent } from './components/logout/logout.component';
 import { LoginComponent } from './components/login/login.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -41,7 +39,6 @@ import { HomepageComponent } from './components/homepage/homepage.component';
     ChannelsComponent,
     TimesComponent,
     PromotionsComponent,
-<<<<<<< Updated upstream
     SalesByCategorywiseComponent,
     SalesCategorywiseAmountsoldComponent,
     AllSalesComponent,
@@ -50,29 +47,21 @@ import { HomepageComponent } from './components/homepage/homepage.component';
     SalesByQuarterComponent,
     SalesOnDatebasedComponent,
     AddProductComponent,
-
-=======
     HeaderComponent,
     HomepageComponent,
     LoginComponent,
     LogoutComponent
->>>>>>> Stashed changes
   ],
   imports: [
 
-    HttpClientModule,
     BrowserModule,
-<<<<<<< Updated upstream
     CommonModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    
-=======
-    AppRoutingModule,
-    FormsModule,
     HttpClientModule
->>>>>>> Stashed changes
+    
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

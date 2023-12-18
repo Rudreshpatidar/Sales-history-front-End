@@ -96,18 +96,11 @@ import {
   provideImgixLoader,
   registerLocaleData,
   setRootDomAdapter
-<<<<<<< Updated upstream
 } from "./chunk-ACM6NSF7.js";
 import {
   IMAGE_CONFIG
 } from "./chunk-5DGE23IB.js";
 import "./chunk-V4QF72PL.js";
-=======
-} from "./chunk-ZX2BSK4W.js";
-import {
-  IMAGE_CONFIG
-} from "./chunk-63TKGN5U.js";
->>>>>>> Stashed changes
 export {
   APP_BASE_HREF,
   AsyncPipe,

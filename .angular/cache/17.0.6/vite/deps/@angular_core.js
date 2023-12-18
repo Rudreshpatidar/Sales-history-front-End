@@ -427,12 +427,8 @@ import {
   ɵɵtrustConstantResourceUrl,
   ɵɵvalidateIframeAttribute,
   ɵɵviewQuery
-<<<<<<< Updated upstream
 } from "./chunk-5DGE23IB.js";
 import "./chunk-V4QF72PL.js";
-=======
-} from "./chunk-63TKGN5U.js";
->>>>>>> Stashed changes
 export {
   ANIMATION_MODULE_TYPE,
   APP_BOOTSTRAP_LISTENER,
