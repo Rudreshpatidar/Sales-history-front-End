@@ -1,1 +1,95 @@
-<p>add-product works!</p>
+<!-- add-product.component.html -->
+
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()" class="add-product-form">
+    <div class="form-group">
+        <label for="prodId">Product ID:</label>
+        <input type="number" id="prodId" formControlName="prodId" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+        <label for="prodName">Product Name:</label>
+        <input type="text" id="prodName" formControlName="prodName" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+        <label for="prodDesc">Description:</label>
+        <textarea id="prodDesc" formControlName="prodDesc" class="form-control" rows="4"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="prodSubcategory">Product Subcategory:</label>
+        <input type="text" id="prodSubcategory" formControlName="prodSubcategory" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+        <label for="prodSubcategoryId">Product Subcategory ID:</label>
+        <input type="number" id="prodSubcategoryId" formControlName="prodSubcategoryId" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+        <label for="prodSubcategoryDesc">Product Subcategory Description:</label>
+        <textarea id="prodSubcategoryDesc" formControlName="prodSubcategoryDesc" class="form-control" rows="4"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="prodCategory">Product Category:</label>
+        <input type="text" id="prodCategory" formControlName="prodCategory" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+        <label for="prodCategoryId">Product Category ID:</label>
+        <input type="number" id="prodCategoryId" formControlName="prodCategoryId" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+        <label for="prodCategoryDesc">Product Category Description:</label>
+        <textarea id="prodCategoryDesc" formControlName="prodCategoryDesc" class="form-control" rows="4"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="prodWeightClass">Product Weight Class:</label>
+        <input type="number" id="prodWeightClass" formControlName="prodWeightClass" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+        <label for="prodUnitOfMeasure">Product Unit of Measure:</label>
+        <input type="text" id="prodUnitOfMeasure" formControlName="prodUnitOfMeasure" class="form-control" maxlength="20">
+    </div>
+
+    <div class="form-group">
+        <label for="prodPackSize">Product Pack Size:</label>
+        <input type="text" id="prodPackSize" formControlName="prodPackSize" class="form-control" maxlength="30" required>
+    </div>
+
+    <div class="form-group">
+        <label for="supplierId">Supplier ID:</label>
+        <input type="number" id="supplierId" formControlName="supplierId" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+        <label for="prodStatus">Product Status:</label>
+        <input type="text" id="prodStatus" formControlName="prodStatus" class="form-control" maxlength="20" required>
+    </div>
+
+    <div class="form-group">
+        <label for="prodListPrice">Product List Price:</label>
+        <input type="number" id="prodListPrice" formControlName="prodListPrice" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+        <label for="prodMinPrice">Product Min Price:</label>
+        <input type="number" id="prodMinPrice" formControlName="prodMinPrice" class="form-control" required>
+    </div>
+
+    <div class="form-group">
+        <label for="prodTotal">Product Total:</label>
+        <input type="text" id="prodTotal" formControlName="prodTotal" class="form-control" maxlength="13" required>
+    </div>
+
+    <div class="form-group">
+        <label for="prodTotalId">Product Total ID:</label>
+        <input type="number" id="prodTotalId" formControlName="prodTotalId" class="form-control" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">{{updateProduct == null ? "Add Product" : "Update Product" }}</button>
+</form>

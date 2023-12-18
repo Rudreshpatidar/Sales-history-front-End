@@ -18,9 +18,9 @@ import { SalesQytsCategoryYearComponent } from './components/sales/sales-qyts-ca
 import { SalesSoldCategoryYearComponent } from './components/sales/sales-sold-category-year/sales-sold-category-year.component';
 import { CommonModule } from '@angular/common';
 import { SalesByQuarterComponent } from './components/sales/sales-by-quarter/sales-by-quarter.component';
-import { FormsModule } from '@angular/forms';
 import { SalesOnDatebasedComponent } from './components/sales/sales-on-datebased/sales-on-datebased.component';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AddProductComponent } from './components/products/add-product/add-product.component';
 
 
 @NgModule({
@@ -41,6 +41,7 @@ import { SalesOnDatebasedComponent } from './components/sales/sales-on-datebased
     SalesSoldCategoryYearComponent,
     SalesByQuarterComponent,
     SalesOnDatebasedComponent,
+    AddProductComponent,
 
   ],
   imports: [
@@ -49,8 +50,9 @@ import { SalesOnDatebasedComponent } from './components/sales/sales-on-datebased
     BrowserModule,
     CommonModule,
     AppRoutingModule,
-    FormsModule
-   
+    FormsModule,
+    ReactiveFormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

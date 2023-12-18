@@ -1,26 +1,34 @@
 export class ProductsModel {
-    constructor(
-        public prodId : number,
-        public prodName:string,
-        public prodDesc:string,
-        public prodSubcategory:string,
-        public prodSubcategoryId:number,
-        public prodSubcategoryDesc:string,
-        public prodCategory:string,
-        public prodCategoryId:number,
-        public prodCategoryDesc:string,
-        public prodWeightClass:number,
-        public prodUnitOfMeasure:string,
-        public prodPackSize:string,
-        public supplierId:number,
-        public prodStatus:string,
-        public prodListPrice:number,
-        public prodMinPrice:number,
-        public prodTotal:string,
-        public prodTotalId:number,
-        public prodSrcId:number,
-        public prodEffFrom:Date,
-        public prodEffTo:Date,
-        public prodValid:string
-){}
-}
+    prodId: any;
+    prodName: any;
+    prodDesc: any;
+    prodStatus: any;
+    prodCategory: any;
+    prodMinPrice: any;
+    prodSubcategory: any;
+        constructor(
+            prodId:number,
+            prodName:string,
+            prodDesc:string,
+            prodSubcategory:string,
+            prodSubcategoryId:number,
+            prodSubcategoryDesc:string,
+            prodCategory:string,
+            prodCategoryId:number,
+            prodCategoryDesc:string,
+            prodWeightClass:number,
+            prodUnitOfMeasure:string,
+            prodPackSize:string,
+            supplierId:number,
+            prodStatus:string,
+            prodListPrice:number,
+            prodMinPrice:number,
+            prodTotal:string,
+            prodTotalId:number,
+            prodSrcId:number,
+            prodEffFrom:Date,
+            prodEffTo:Date,
+            prodValid:string
+    ){}
+    }
+    
