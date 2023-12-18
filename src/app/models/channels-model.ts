@@ -1,4 +1,5 @@
 export class ChannelsModel {
+<<<<<<< Updated upstream
     constructor(
         public channelId:number,
         public channelDesc:string,
@@ -7,4 +8,7 @@ export class ChannelsModel {
         public channelTotal:string,
         public channelTotalId:number,
     ){}
+=======
+    
+>>>>>>> Stashed changes
 }

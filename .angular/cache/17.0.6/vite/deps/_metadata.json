@@ -1,40 +1,66 @@
 {
+<<<<<<< Updated upstream
   "hash": "5cad10e7",
   "browserHash": "1f1fa70a",
+=======
+  "hash": "a7ee30ad",
+  "browserHash": "70959417",
+>>>>>>> Stashed changes
   "optimized": {
     "@angular/common": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
+<<<<<<< Updated upstream
       "fileHash": "ed819c37",
+=======
+      "fileHash": "40880870",
+>>>>>>> Stashed changes
       "needsInterop": false
     },
     "@angular/common/http": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/http.mjs",
       "file": "@angular_common_http.js",
+<<<<<<< Updated upstream
       "fileHash": "890b6391",
+=======
+      "fileHash": "fed25f34",
+>>>>>>> Stashed changes
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
+<<<<<<< Updated upstream
       "fileHash": "af38ddc4",
+=======
+      "fileHash": "99051fd2",
+>>>>>>> Stashed changes
       "needsInterop": false
     },
     "@angular/forms": {
       "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
       "file": "@angular_forms.js",
+<<<<<<< Updated upstream
       "fileHash": "0a98226b",
+=======
+      "fileHash": "0731a948",
+>>>>>>> Stashed changes
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
+<<<<<<< Updated upstream
       "fileHash": "c057b7d2",
+=======
+      "fileHash": "b97f263d",
+>>>>>>> Stashed changes
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
+<<<<<<< Updated upstream
       "fileHash": "e2b10e3d",
       "needsInterop": false
     },
@@ -42,10 +68,14 @@
       "src": "../../../../../node_modules/rxjs/dist/esm5/index.js",
       "file": "rxjs.js",
       "fileHash": "95810f88",
+=======
+      "fileHash": "c5b66b47",
+>>>>>>> Stashed changes
       "needsInterop": false
     }
   },
   "chunks": {
+<<<<<<< Updated upstream
     "chunk-27PRGYLW": {
       "file": "chunk-27PRGYLW.js"
     },
@@ -60,6 +90,19 @@
     },
     "chunk-V4QF72PL": {
       "file": "chunk-V4QF72PL.js"
+=======
+    "chunk-5JVHOGLJ": {
+      "file": "chunk-5JVHOGLJ.js"
+    },
+    "chunk-ICFXINVI": {
+      "file": "chunk-ICFXINVI.js"
+    },
+    "chunk-ZX2BSK4W": {
+      "file": "chunk-ZX2BSK4W.js"
+    },
+    "chunk-63TKGN5U": {
+      "file": "chunk-63TKGN5U.js"
+>>>>>>> Stashed changes
     }
   }
 }

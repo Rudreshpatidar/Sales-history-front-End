@@ -1,0 +1,22 @@
+<div class="bg-img">
+
+    <form class="container" (ngSubmit)="login()">
+        <h1>Login</h1>
+
+        <label for="userName">User Name</label>
+        <input type="text" class="form-control" placeholder="Enter User Name" id="userName" name="uName"
+            [(ngModel)]="newUser.userName">
+
+        <label for="userPassword">Password</label>
+        <input type="password" class="form-control" placeholder="Enter User Password" id="userPassword" name="uPassword"
+            [(ngModel)]="newUser.userPassword">
+
+        <button type="submit" class="btn btn-light mr-5 text-warning">
+            LOGIN
+        </button>
+
+        <button type="reset" class="btn btn-light text-warning">
+            CLEAR
+        </button>
+    </form>
+</div>
