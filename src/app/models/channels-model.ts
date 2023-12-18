@@ -7,4 +7,5 @@ export class ChannelsModel {
         public channelTotal:string,
         public channelTotalId:number,
     ){}
+
 }
